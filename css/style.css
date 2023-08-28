@@ -713,6 +713,24 @@ h6 {
 /***********************************************************
   9. Portfolio Section
 ************************************************************/
+
+.portfolio-section .visit-site-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #44cbe1;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.portfolio-section .visit-site-btn:hover {
+  background-color: #33a9c1;
+}
+
+
 .portfolio-section {
   padding-bottom: 100px;
   position: relative;
@@ -921,6 +939,14 @@ h6 {
   color: #b0aac0;
   border: 1px solid #606060;
 }
+
+.grid .box iframe{
+  display:inline-block;
+  width:1050px;
+  height:547px;
+ }
+
+
 /***********************************************************
   10. Service Section
 ************************************************************/
