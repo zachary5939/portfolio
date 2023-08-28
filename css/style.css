@@ -6,12 +6,12 @@
  * Version: 2.2.5
  * Initial Release: November 22, 2022
  * Last Update: April 20, 2023
- * 
+ *
  */
-/* 
+/*
 
 ====================
-  Table of Contents 
+  Table of Contents
 ====================
 
 1. Variables
@@ -21,8 +21,8 @@
 5. Hero Area
 6. Intro Section
 7. About Section
-8. Skill Section 
-9. Portfolio Section 
+8. Skill Section
+9. Portfolio Section
 10. Service Section
 11. Features Section
 12. Testimonial Section
@@ -35,11 +35,11 @@
 
  */
 /***********************************************************
-  1. Variables 
+  1. Variables
 ************************************************************/
 /* brand colors */
 /***********************************************************
-  2. Common Styles 
+  2. Common Styles
 ************************************************************/
 .section-title {
   width: 50%;
@@ -202,7 +202,7 @@
   animation: anim-zoom 5s infinite;
 }
 /***********************************************************
-  3. General Style 
+  3. General Style
 ************************************************************/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -487,8 +487,20 @@ h6 {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+/* Span Tag */
+#site-navbar .container div span{
+  color:#ffffff;
+  font-family:'Alata', sans-serif;
+  font-weight:600;
+  font-size:24px;
+ }
+
+ /* Font Icon */
+ #site-navbar .container div i{
+  font-size:24px;
+ }
 /***********************************************************
-  6. Intro Section  
+  6. Intro Section
 ************************************************************/
 .intro-section {
   position: relative;
@@ -539,7 +551,7 @@ h6 {
   border: none;
 }
 /***********************************************************
-  7. About Section 
+  7. About Section
 ************************************************************/
 .about-section {
   padding-bottom: 80px;
@@ -621,6 +633,21 @@ h6 {
 .dark-mode .about-section {
   background: #2a2a2a;
 }
+
+.social-icons {
+  display: flex;
+  gap: 15px;  /* Spacing between the icons */
+}
+
+.social-icons a {
+  color: #44cbe1; /* Set this to your desired icon color */
+  transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.social-icons a:hover {
+  color: #2a9da1; /* Change this to your desired hover color */
+}
+
 /***********************************************************
   8. Skill Sections
 ************************************************************/
@@ -631,6 +658,7 @@ h6 {
   position: relative;
   z-index: 1;
 }
+
 .skill-section:after {
   content: '';
   position: absolute;
@@ -641,42 +669,52 @@ h6 {
   background: rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
+
 .skill-section h2 {
   color: #fff;
   font-size: 48px;
   margin-bottom: 36px;
 }
+
 .skill-section h2 span {
   display: block;
   font-size: 18px;
   text-transform: uppercase;
   color: #44cbe1;
 }
+
 .skill-section .lead {
   color: #bdb9cb;
 }
+
 .skill-section .content-block {
   padding-right: 72px;
 }
+
 .skill-section .progress-block {
   margin-top: 30px;
 }
+
 .skill-section .progress-block h4 {
   color: #fff;
   font-size: 16px;
   margin-bottom: 12px;
 }
+
 .skill-section .progress-wrapper {
   margin-bottom: 24px;
   position: relative;
 }
+
 .skill-section .progress {
   height: 0.5rem;
   position: relative;
 }
+
 .skill-section .progress-bar {
   background-color: #44cbe1;
 }
+
 .skill-section .progress-value {
   position: absolute;
   right: 0;
@@ -684,9 +722,96 @@ h6 {
   color: #44cbe1;
   font-size: 16px;
 }
+
 .progress-bar {
   transition-duration: 3s;
 }
+
+/* New favicon related CSS */
+.skill-icon-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.skill-icon-wrapper {
+    position: relative;
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon-wrapper:hover {
+    transform: scale(1.1); /* Icon will slightly grow on hover */
+}
+
+.skill-icon-wrapper:hover::before {
+    content: attr(data-skill); /* Show skill name on hover */
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #44cbe1;
+    font-weight: bold;
+}
+
+/* For bigger icons */
+.logo-icon {
+  font-size: 2rem; /* or any desired size */
+}
+
+/* For positioning text above icon */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px; /* Adds space between icons */
+}
+
+.icon-text {
+  margin-bottom: 5px; /* adjust as needed */
+  text-align: center;
+  color: #fff; /* Font color */
+}
+
+.icon-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+/* Icon row */
+#skill-section .icon-row{
+  padding-bottom:0px;
+  transform:translatex(0px) translatey(-313px);
+ }
+
+ /* Skill section */
+ #skill-section{
+  height:524px;
+ }
+
+ /* Icon container */
+ #skill-section .icon-container{
+  width:82px;
+  height:175px;
+ }
+
+ #skill-section i{
+  font-size:54px;
+ }
+
+ /* Icon text */
+ #skill-section .icon-text{
+  font-size:15px;
+ }
+
+
+
+
 /***********************************************************
   9. Portfolio Section
 ************************************************************/
@@ -1393,7 +1518,7 @@ h6 {
   border: none;
 }
 /***********************************************************
-  14. Partner Section  
+  14. Partner Section
 ************************************************************/
 .partner-section {
   padding-top: 90px;
@@ -1514,7 +1639,7 @@ h6 {
   border-color: #44cbe1;
 }
 /***********************************************************
-  16. Site Footer 
+  16. Site Footer
 ************************************************************/
 .site-footer {
   background-color: #2e313e;
@@ -1686,7 +1811,7 @@ h6 {
   width: 100%;
 }
 /***********************************************************
-  18. Media Queries 
+  18. Media Queries
 ************************************************************/
 /* max-width: 1599px and min-width:992px */
 @media (max-width: 1599px) and (min-width: 992px) {
