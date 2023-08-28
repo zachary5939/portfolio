@@ -655,19 +655,6 @@ h6 {
   background-color: #2e313e;
   background: url('../image/skill-bg.jpg') no-repeat center center;
   background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.skill-section:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: -1;
 }
 
 .skill-section h2 {
@@ -691,78 +678,10 @@ h6 {
   padding-right: 72px;
 }
 
-.skill-section .progress-block {
-  margin-top: 30px;
-}
-
-.skill-section .progress-block h4 {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.skill-section .progress-wrapper {
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.skill-section .progress {
-  height: 0.5rem;
-  position: relative;
-}
-
-.skill-section .progress-bar {
-  background-color: #44cbe1;
-}
-
-.skill-section .progress-value {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  color: #44cbe1;
-  font-size: 16px;
-}
-
-.progress-bar {
-  transition-duration: 3s;
-}
-
-/* New favicon related CSS */
-.skill-icon-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.skill-icon-wrapper {
-    position: relative;
-    width: 60px;  /* Adjust size as needed */
-    height: 60px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.skill-icon-wrapper:hover {
-    transform: scale(1.1); /* Icon will slightly grow on hover */
-}
-
-.skill-icon-wrapper:hover::before {
-    content: attr(data-skill); /* Show skill name on hover */
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #44cbe1;
-    font-weight: bold;
-}
-
-/* For bigger icons */
 .logo-icon {
-  font-size: 2rem; /* or any desired size */
+  font-size: 3rem;
 }
 
-/* For positioning text above icon */
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -772,43 +691,22 @@ h6 {
 }
 
 .icon-text {
-  margin-bottom: 5px; /* adjust as needed */
+  margin-bottom: 5px;
   text-align: center;
-  color: #fff; /* Font color */
+  color: #fff;
 }
 
 .icon-row {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between; /* evenly distribute the icons */
 }
 
-/* Icon row */
-#skill-section .icon-row{
-  padding-bottom:0px;
-  transform:translatex(0px) translatey(-313px);
- }
-
- /* Skill section */
- #skill-section{
-  height:524px;
- }
-
- /* Icon container */
- #skill-section .icon-container{
-  width:82px;
-  height:175px;
- }
-
- #skill-section i{
-  font-size:54px;
- }
-
- /* Icon text */
- #skill-section .icon-text{
-  font-size:15px;
- }
-
+.skill-icon-wrapper:hover::before {
+  /* Fixed positioning to display the text properly above the icon */
+  top: -30px;
+  left: 0;
+  transform: none;
+}
 
 
 
