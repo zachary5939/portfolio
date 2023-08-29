@@ -1661,6 +1661,15 @@ h6 {
   text-transform: capitalize;
   font-size: 16px;
 }
+
+#site-footer .footer-bottom{
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  left:127px;
+ }
+
+
 /***********************************************************
   17. Libraries
 ************************************************************/
@@ -1701,6 +1710,22 @@ h6 {
 .dots .dot:nth-child(3) {
   animation-delay: 0.4s;
 }
+
+/* Span Tag */
+.branding-block .bottom-head span{
+  font-size:30px;
+  color:#ffffff;
+  font-weight:700;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+
+ /* Font Icon */
+ .branding-block .bottom-head i{
+  font-size:30px;
+ }
+
+
+
 @keyframes dot-dot-dot {
   0%,
   60%,
