@@ -1459,6 +1459,10 @@ h6 {
 /***********************************************************
   15. Contact Section
 ************************************************************/
+#contact-section{
+  background-color:#2a2626;
+ }
+
 .contact-section {
   padding-bottom: 60px;
   position: relative;
