@@ -212,6 +212,9 @@ body {
 body.dark-mode {
   background: #222;
 }
+.navbar-brand{
+  cursor: pointer;
+}
 a {
   color: #44cbe1;
   text-decoration: none;
@@ -1501,6 +1504,25 @@ h6 {
   margin-right: 90px;
   border-radius: 10px;
 }
+
+/* Input message */
+#inputMessage{
+  color:#ffffff;
+ }
+
+ /* Input name */
+ #inputName{
+  transform:translatex(0px) translatey(0px);
+  color:#ffffff;
+ }
+
+ /* Input email */
+ #inputEmail{
+  color:#ffffff;
+ }
+
+
+
 .contact-section form > div {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
