@@ -114,7 +114,7 @@
 						<h1 class="hero-head"><small>Hello There, I'm</small>Zach <strong>Stallings</strong></h1>
 						<p>
 							A <strong>Software Engineer</strong> who loves to work with
-							<span class="typer" id="main" data-words="Javascript, React, Express, Sequelize, Python, Flask, Django" data-delay="100" data-deleteDelay="1000"></span>
+							<span class="typer" id="main" data-words="React, Redux, JavaScript, Node.js, Express, Sequelize, Python, Flask, Django, AWS" data-delay="100" data-deleteDelay="1000"></span>
 							<span class="cursor" data-owner="main"></span>
 						</p>
 						<div class="link-group">
@@ -969,27 +969,29 @@
 					<div class="form-message">
 						<p></p>
 					</div>
-					<form class="row g-3" id="fungi-contact" method="POST" action="php/form-handler.php">
+					<!-- Updated action to Formspree endpoint -->
+					<form class="row g-3" id="fungi-contact" method="POST" action="https://formspree.io/f/xnqkzdar">
 						<div class="col-md-6">
 							<div class="input-group mb-3">
 								<label for="inputName" class="form-label visually-hidden">Name</label>
-		   						<input type="text" class="form-control" id="inputName" placeholder="Name*" name="inputName" required>
-	   						</div>
-	   					</div>
-	   					<div class="col-md-6">
-
-	   						<div class="input-group mb-3">
+								<!-- Updated name attribute for Formspree -->
+								<input type="text" class="form-control" id="inputName" placeholder="Name*" name="name" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-group mb-3">
 								<label for="inputEmail" class="form-label visually-hidden">Email</label>
-		   						<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email*" required>
-	   						</div>
-
+								<!-- Updated name attribute for Formspree -->
+								<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email*" required>
+							</div>
 						</div>
 						<div class="col-md-12">
 							<label for="inputMessage" class="form-label visually-hidden">Message</label>
-	   						<textarea class="form-control mb-3" id="inputMessage" name="inputMessage" placeholder="Your message here*" required></textarea>
-	   						<button type="submit" class="btn btn-main" name="submit">Send Message</button>
+							<!-- Updated name attribute for Formspree -->
+							<textarea class="form-control mb-3" id="inputMessage" name="message" placeholder="Your message here*" required></textarea>
+							<button type="submit" class="btn btn-main" name="submit">Send Message</button>
 						</div>
-					</form> <!-- .row -->
+					</form>
 				</div>
 			</div> <!-- .row -->
 		</div> <!-- .container -->
