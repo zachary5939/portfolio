@@ -17,7 +17,7 @@ $('.js-preloader').preloadinator({
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 30,
       "density": {
         "enable": true,
         "value_area": 400
@@ -29,11 +29,11 @@ particlesJS('particles-js', {
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
+        "width": 1,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 1
       },
       "image": {
         "src": "img/github.svg",
@@ -52,13 +52,13 @@ particlesJS('particles-js', {
       }
     },
     "size": {
-      "value": 4,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 30,
+        "speed": 1,
         "size_min": 0.1,
-        "sync": false
+        "sync": true
       }
     },
     "line_linked": {
@@ -70,7 +70,7 @@ particlesJS('particles-js', {
     },
     "move": {
       "enable": true,
-      "speed": 12,
+      "speed": 4,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -87,12 +87,12 @@ particlesJS('particles-js', {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "bubble"
       },
       "resize": true
     },
@@ -105,17 +105,17 @@ particlesJS('particles-js', {
       },
       "bubble": {
         "distance": 100,
-        "size": 80,
+        "size": 10,
         "duration": 2,
         "opacity": 0.8,
         "speed": 3
       },
       "repulse": {
         "distance": 100,
-        "duration": 0.4
+        "duration": 0.2
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 10
       },
       "remove": {
         "particles_nb": 2
@@ -241,7 +241,7 @@ var greenIcon = L.icon({
     iconSize:     [48, 48], // size of the icon
 });
 
-L.marker([-37.817160, 144.955937], {icon: greenIcon}).addTo(map);
+L.marker([34.2805, -119.2945], {icon: greenIcon}).addTo(map);
 
 
 
