@@ -17,10 +17,10 @@ $('.js-preloader').preloadinator({
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 30,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 400
+        "value_area": 600
       }
     },
     "color": {
@@ -42,7 +42,7 @@ particlesJS('particles-js', {
       }
     },
     "opacity": {
-      "value": 0.1,
+      "value": 0.8,
       "random": false,
       "anim": {
         "enable": false,
@@ -52,25 +52,25 @@ particlesJS('particles-js', {
       }
     },
     "size": {
-      "value": 3,
+      "value": 1.4,
       "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
         "size_min": 0.1,
-        "sync": true
+        "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 170,
       "color": "#ffffff",
       "opacity": 0.2,
       "width": 2
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
