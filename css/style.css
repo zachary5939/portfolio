@@ -46,6 +46,12 @@ html, body {
   overflow-x: hidden;
 }
 
+#skill-section .aos-init .fa-brands{
+  font-size:41px;
+ }
+
+
+
 .section-title {
   width: 50%;
   margin-left: auto;
