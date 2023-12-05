@@ -5,3 +5,5 @@ ugh
 polaris
 i hate app academy
 myth
+git
+commit
